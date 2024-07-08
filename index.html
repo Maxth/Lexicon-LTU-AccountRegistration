@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <title>Account Registration</title>
 </head>
+
 <body>
+  <main>
+    <h2>Register your account</h2>
+    <article>
+      <form id="form">
+
+        <div class="input-container">
+          <label class="label">Name</label>
+          <input name="name" id="name" required type="text" />
+        </div>
+
+        <div class="input-container">
+          <label class="label">Username</label>
+          <input name="username" id="username" required type="text" />
+        </div>
+
+        <div class="input-container">
+          <label class="label">Email</label>
+          <input name="email" id="email" required type="email" />
+        </div>
+
+        <div class="input-container">
+          <label class="label">Password</label>
+          <input name="password" placeholder="At least 8 characters" id="password" required type="password" />
+        </div>
+
+        <div class="input-container">
+          <label class="label">Confirm password</label>
+          <input placeholder="At least 8 characters" id="confirm" required type="password" />
+        </div>
+
+        <button disabled id="submit" type="submit">Sign up</button>
+
+      </form>
+    </article>
+  </main>
   <script src="index.js"></script>
 </body>
+
 </html>
